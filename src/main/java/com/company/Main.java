@@ -19,7 +19,7 @@ public class Main {
 //
 
         //Get persons by name
-        persons = dataProvider.getPersonByName("Charlie");
+        persons = dataProvider.getPersonByName("Niels");
         for (String person: persons) {
             System.out.println(person);
         }
