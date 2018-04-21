@@ -8,7 +8,7 @@ public interface IDataProvider {
 
     public List<String> getPersonByName(String name) throws SQLException, ClassNotFoundException;
 
-    public void createPerson(String name, int age) throws SQLException, ClassNotFoundException;
+    public int createPerson(String name, int age) throws SQLException, ClassNotFoundException;
 
     public void deletePersonById(int id) throws SQLException, ClassNotFoundException;
 }

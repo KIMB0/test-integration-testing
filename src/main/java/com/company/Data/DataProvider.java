@@ -44,7 +44,7 @@ public class DataProvider implements IDataProvider {
         return persons;
     }
 
-    public void createPerson(String name, int age) throws SQLException, ClassNotFoundException {
+    public int createPerson(String name, int age) throws SQLException, ClassNotFoundException {
         Connection connection = new DatabaseConnect().connectToDatabase(url, user, password);
         int id = generateNewId();
         String query = "INSERT INTO person (id, name, age)" + " VALUES (?, ?, ?)";
@@ -56,6 +56,8 @@ public class DataProvider implements IDataProvider {
 
         System.out.println(name + " created in the database!");
         connection.close();
+
+        return id;
     }
 
     public void deletePersonById(int id) throws SQLException, ClassNotFoundException {

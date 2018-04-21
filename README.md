@@ -56,6 +56,10 @@ Here I will explain some of the criterias for the integrations test to be made.
 * All executed test results are documented
 * All bugs are fixed and closed
 
+**IMPORTANT INFO**
+
+In this project I am testing on the production database, but if this was a real/important project then I would have created a development/staging database - maybe on another server - which would reflect the production database. Maybe copy the production database once a day to this development database. Then I would base my tests on this database.
+
 ## Test Cases
 In this section I will give examples on test cases based on this project.
 
